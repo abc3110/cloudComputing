@@ -1,0 +1,16 @@
+html,body,div,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+ul,li,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+body{
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, "Microsoft YaHei", Î¢ÈíÑÅºÚ, STHeiti, "WenQuanYi Micro Hei", "PingFang SC", SimSun, sans-serif;
+}
+.clearfix{
+	clear:both;
+}

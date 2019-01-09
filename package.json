@@ -1,0 +1,27 @@
+{
+  "name": "cloudcomputing",
+  "version": "1.0.0",
+  "description": "My first big project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "test ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abc3110/resume.git"
+  },
+  "keywords": [
+    "cloud",
+    "computing"
+  ],
+  "author": "yxb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abc3110/resume/issues"
+  },
+  "homepage": "https://github.com/abc3110/resume#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
