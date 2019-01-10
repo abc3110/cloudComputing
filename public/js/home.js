@@ -1,5 +1,4 @@
 var tabs=document.querySelectorAll("[data-toggle=tab]");
-console.log(tabs);
 
 for(var tab of tabs){
     tab.onclick=function(){
@@ -12,4 +11,6 @@ for(var tab of tabs){
         div.style.zIndex="10";
     }
 }
+
+console.log(window.scrollHeight);
 

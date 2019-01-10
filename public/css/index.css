@@ -3,7 +3,7 @@
     padding:24px  0px;
 }
 .nav,.box{
-    width:1200px;
+    width:1160px;
     margin:0 auto;
 }
 .nav img{
@@ -127,6 +127,206 @@
 }
 .active{
     background:#fff;
+}
+/*第3层*/
+#layer{
+    width:100%;
+    height:1521px;
+    background:url("../img/3917_jdbbe20e.png") no-repeat 50% 50%;
+    background-size:cover;
+}
+#layer::before{
+    content:"";
+    display:table;
+}
+.d-top{
+    display:flex;
+    justify-content: space-between;
+    margin-top:106px;
+    padding-bottom:50px;
+}
+.d-top>div{
+    width:580px;   
+}
+.d-top .aleft1s{
+    animation: fadeInLeft 1s;
+}
+.d-top .aleft2s{
+    animation: fadeInLeft 2s;
+}
+.d-top .aleft3s{
+    animation: fadeInLeft 3s;
+}
+.d-top .aright1s{
+    animation: fadeInRight 1s;
+}
+.d-top .aright2s{
+    animation: fadeInRight 2s;
+}
+.d-top .aright3s{
+    animation: fadeInRight 3s;
+}
+/*统一的标题*/
+h1.title{
+    margin-bottom: 21px;
+    font-size:36px;
+    font-weight:normal;
+}
+/*标题中 凸出显示文字*/
+.h-protrude{
+    color:rgb(245, 139, 63);
+}
+.d-top>.a1>p{
+    font-size:16px;
+    color:#999;
+    line-height:26px;
+}
+.d-top>.a1>a{
+    display:block;
+    margin-top:38px;
+}
+@keyframes fadeInLeft{
+    0%{
+        transform: translate3d(-100%,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        transform: translate3d(100%,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+.f2>.aright>ul.yun{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    width:360px;
+    flex-wrap: wrap;
+}
+.f2>.aright>ul.yun>li{
+    width:100px;
+    text-align:center;
+    margin-top:30px;
+}
+.f2>.aright>ul.yun>li>img{
+    width:45px;
+    margin-bottom:20px;
+}
+.f2>.aright>ul.yun>li>p{
+    color:rgb(245, 139, 63);
+}
+.f3>.a1>ul{
+    display:flex;
+    justify-content: flex-start;
+    list-style:none;
+    margin-top:40px;
+}
+.f3>.a1>ul>li{
+    margin:0 30px;
+    text-align:center;
+}
+.f3>.a1>ul>li>span{
+    font-family: Impact, Charcoal, sans-serif; 
+    color: rgb(245, 139, 63); 
+    font-size: 36px;
+}
+.f3>.a1>ul>li>p{
+    color: rgb(102, 102, 102);
+    margin-top:15px;
+}
+.animate1s{
+    animation: animate 2s; 
+}
+.animate2s{
+    animation: animate 3s; 
+}
+.animate3s{
+    animation: animate 5s; 
+}
+/*精英层-cream*/
+#cream{
+    height:900px;
+    background:#fff url("../img/1587_jgzx3s67.png") no-repeat -300px top;
+    position:relative;
+    top:-43px;
+    z-index:100;
+}
+#cream:before{
+    content:"";
+    display:table;
+}
+#cream>.box>.summary{
+    text-align:center;
+    color:#fff;
+    margin-top:173px;
+}
+#cream>.box>.summary>h1{
+    color:#fff;
+    padding-bottom:10px;
+}
+#cream>.box>.summary>p{
+    line-height:26px;
+}
+#cream>.box>.personage{
+    height:490px;
+    margin-top:56px;
+    /*border:1px solid #000;*/
+    overflow:hidden;
+}
+#cream>.box>.personage>ul{
+    width:2000px;
+    height:100%;
+}
+#cream>.box>.personage .entity{
+    width:284px;
+    height:410px;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:5px 8px 15px rgba(0,0,0,0.05);
+    padding:30px 40px 40px 40px;
+    margin:0 10px;
+    float:left;
+    text-align:center;
+}
+#cream .entity>img{
+    width:188px;
+    margin-bottom:30px;
+    margin-top:10px;
+}
+#cream .entity>p{
+    color:rgb(102, 102, 102);
+}
+#cream .entity>p:nth-child(2){
+    font-size:18px;
+}
+#cream .entity>p:nth-child(2) span{
+    font-size:22px;
+}
+#cream .entity>p:nth-child(3){
+    margin-top:16px;
+    font-size: 14px;
+    line-height:20px;
+    margin-bottom:40px;
+}
+.btn{
+    display:inline-block;
+    width:120px;
+    height:36px;
+    line-height:36px;
+    text-align:center;
+    border:1px solid rgb(39,146,240);
+    font-size: 14px;
+    border-radius:20px;
+    color:rgb(39,146,240);
+}
+.btn:hover{
+    background:rgb(39,146,240);
+    color:#fff;
 }
 
 
