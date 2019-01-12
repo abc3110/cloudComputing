@@ -7,9 +7,10 @@ ul,li,ol{
 }
 a{
 	text-decoration:none;
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, "Microsoft YaHei", Î¢ï¿½ï¿½ï¿½Åºï¿½, STHeiti, "WenQuanYi Micro Hei", "PingFang SC", SimSun, sans-serif;
 }
 body{
-	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, "Microsoft YaHei", Î¢ÈíÑÅºÚ, STHeiti, "WenQuanYi Micro Hei", "PingFang SC", SimSun, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, "Microsoft YaHei", Î¢ï¿½ï¿½ï¿½Åºï¿½, STHeiti, "WenQuanYi Micro Hei", "PingFang SC", SimSun, sans-serif;
 }
 .clearfix{
 	clear:both;

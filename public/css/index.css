@@ -6,6 +6,10 @@
     width:1160px;
     margin:0 auto;
 }
+.box::before{
+    content:"";
+    display: table;
+}
 .nav img{
     height:56px;
 }
@@ -32,10 +36,14 @@
     border-bottom:2px solid #00aeef;
 }
 .nav>ul>li.custom:hover>ul.jil{
-    display:block;
+    opacity: 1;
+}
+.nav>ul>li.custom:hover>ul.jil li a{
+    height:36px;
+    line-height: 36px;
 }
 .nav ul.jil{
-    display:none;
+    opacity: 0;
     width:181px;
     border:1px solid #ccc;
     position:absolute;
@@ -43,12 +51,16 @@
     left:-20px;
     padding:0;
     background:#fff;
+    transition:all 0.2s;
 }
 .nav ul.jil>li>a{
     display:block;
     color:#333;
     font-size:14px;
-    padding:10px 20px;
+    padding:0 20px;
+    height:0;
+    line-height:0;
+    transition:all 0.5s;
 }
 .nav ul.jil>li>a:hover{
     background:#ccc;
@@ -176,7 +188,7 @@ h1.title{
 .h-protrude{
     color:rgb(245, 139, 63);
 }
-.d-top>.a1>p{
+.h-descrip{
     font-size:16px;
     color:#999;
     line-height:26px;
@@ -250,11 +262,9 @@ h1.title{
 }
 /*精英层-cream*/
 #cream{
-    height:900px;
+    /* height:900px;  */
     background:#fff url("../img/1587_jgzx3s67.png") no-repeat -300px top;
-    position:relative;
-    top:-43px;
-    z-index:100;
+    margin-top:-43px;
 }
 #cream:before{
     content:"";
@@ -277,10 +287,30 @@ h1.title{
     margin-top:56px;
     /*border:1px solid #000;*/
     overflow:hidden;
+    position:relative;
+}
+#cream>.box>.personage>a{
+    display:block;
+    width:40px;
+    height:60px;
+    background:red;
+    text-align:center;
+    line-height:60px;
+    position: absolute;
+    top:50%;   
+    margin-top:translateY(-50%);
+}
+#cream>.box>.personage>a.left{
+    left:10px;
+}
+#cream>.box>.personage>a.right{
+    right:10px;
 }
 #cream>.box>.personage>ul{
     width:2000px;
     height:100%;
+    margin-left:0px;
+    transition:all 3s;
 }
 #cream>.box>.personage .entity{
     width:284px;
@@ -322,14 +352,148 @@ h1.title{
     border:1px solid rgb(39,146,240);
     font-size: 14px;
     border-radius:20px;
-    color:rgb(39,146,240);
+    color:rgb(12, 33, 51);
 }
 .btn:hover{
     background:rgb(39,146,240);
     color:#fff;
 }
-
-
+#cream>.box>.indi{
+    height:150px;
+}
+#cream>.box>.indi::before{
+    content: "";
+    display:table;
+}
+#cream>.box>.indi>ul{
+    width:120px;
+    margin:0 auto;
+    margin-top:35px;
+}
+#cream>.box>.indi>ul>li{
+    width:30px;
+    height:5px;
+    background:#CCE4F3;
+    float:left;
+    margin-right:5px;
+    margin-left:5px;
+}
+#cream>.box>.indi>ul>li.active{
+    background:#3393CD;
+}
+/*新闻层*/
+#news{
+    height:480px;
+}
+#news>.box{
+    display:flex;
+    justify-content: space-between;
+}
+#news>.box>.theme{
+    width:483px;
+    margin-top:102px;
+}
+#new>.box>.list{
+    width:650px;
+}
+#news>.box>.theme>a.btn{
+    margin-top:50px;
+}
+#news>.box>.theme>h1{
+    margin-bottom:15px;
+}
+#news>.box>.list>ul>li{ 
+    width:650px;
+    padding:10px;
+}
+#news>.box>.list>ul>li>div{
+    padding:20px;
+    border-radius: 8px;
+    box-shadow:2px 2px 6px 2px rgb(247,247,247);
+}
+#news li h2{
+    font-size:22px;
+    color:rgb(102, 102, 102);
+    font-weight: normal;
+}
+#news li p{
+    font-size:14px;
+    margin:8px 0;
+    color:#999;
+}
+#news li span{
+    color:rgb(204,204,204);
+    font-size:14px;
+}
+/*合作商*/
+#partner{
+    height:442px;
+    background:url("../img/1587_jgzx6ox4.png") no-repeat;
+    background-position:-300px 0;
+}
+#partner::before{
+    content:"";
+    display: table;
+}
+#partner>.box>.p-logo{
+    display:flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    margin-top:246px;
+}
+#partner>.box>.p-logo>img{
+    width:145px;
+    height:75px;
+}
+/*页脚*/
+#footer{
+    background-color:rgb(38, 38, 38);
+    margin-top:-30px;
+    font-size:14px;
+    color:rgb(187, 187, 187);
+}
+#footer>.box>.content{
+    display:flex;
+    flex-flow:nowrap;
+    justify-content: space-between;
+}
+#footer a{
+    color:rgb(187, 187, 187);
+}
+#footer>.box>.content h2{
+    color:#fff;
+    font-weight:normal;
+    font-size:18px;
+    line-height: 40px;
+    margin-bottom:5px;
+}
+#footer>.box>.content{
+    margin-top:50px;
+}
+#footer>.box>.content li{
+    line-height:30px;
+}
+#footer>.box>.content>div:nth-child(4) li{
+    margin-top:15px;
+}
+#footer>.box>.content>div:nth-child(4) img{
+    margin-right:12px;
+    vertical-align: middle;
+}
+#footer>.box>.content>div:last-child>img{
+    width:120px;
+    height:120px;
+    margin-bottom:18px;
+}
+#footer>.box>.content>div:last-child{
+    text-align:center;
+}
+#footer>.box>.copyright{
+    margin-top:50px;
+    border-top:1px solid rgb(68, 68, 68);
+    text-align:center;
+    padding:20px 0 30px 0;
+}
 
 
 

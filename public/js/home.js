@@ -14,3 +14,16 @@ for(var tab of tabs){
 
 console.log(window.scrollHeight);
 
+function carousel(){
+    var cream=document.getElementById("cream");
+    var personAriaUl=cream.querySelector(".box>.personage>ul");
+    alert(personAriaUl.style.marginLeft)
+    alert(parseInt(personAriaUl.style.marginLeft))
+    var left=parseInt(personAriaUl.style.marginLeft);
+    if(left)
+        personAriaUl.style.marginLeft=left-364+"px";
+    else
+    personAriaUl.style.marginLeft=-364+"px";
+}
+
+
