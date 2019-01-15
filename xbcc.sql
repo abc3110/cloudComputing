@@ -33,3 +33,10 @@ CREATE TABLE xbcc_site_team(
     about VARCHAR(100),
     description VARCHAR(500)
 );
+#新闻资讯列表：xbcc_new_list
+CREATE TABLE xbcc_new_list(
+    lid INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(20),
+    details VARCHAR(50),
+    date DATE
+)

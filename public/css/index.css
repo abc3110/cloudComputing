@@ -183,6 +183,7 @@ h1.title{
     margin-bottom: 21px;
     font-size:36px;
     font-weight:normal;
+    visibility: hidden;
 }
 /*标题中 凸出显示文字*/
 .h-protrude{
@@ -192,26 +193,36 @@ h1.title{
     font-size:16px;
     color:#999;
     line-height:26px;
+    visibility: hidden;
 }
-.d-top>.a1>a{
+.h-descrip+a{
     display:block;
     margin-top:38px;
+    visibility: hidden;
 }
+
 @keyframes fadeInLeft{
     0%{
+        opacity:0;
         transform: translate3d(-100%,0,0);
     }
     100%{
+        opacity:1;
         transform: translate3d(0,0,0);
     }
 }
 @keyframes fadeInRight{
     0%{
+        opacity:0;
         transform: translate3d(100%,0,0);
     }
     100%{
+        opacity:1;
         transform: translate3d(0,0,0);
     }
+}
+.f2>div:first-child{
+    visibility: hidden;
 }
 .f2>.aright>ul.yun{
     list-style: none;
@@ -219,6 +230,7 @@ h1.title{
     justify-content: space-around;
     width:360px;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 .f2>.aright>ul.yun>li{
     width:100px;
@@ -250,6 +262,9 @@ h1.title{
 .f3>.a1>ul>li>p{
     color: rgb(102, 102, 102);
     margin-top:15px;
+}
+.f3>.a1+div{
+    visibility: hidden;
 }
 .animate1s{
     animation: animate 2s; 
@@ -494,7 +509,17 @@ h1.title{
     text-align:center;
     padding:20px 0 30px 0;
 }
-
+div.page>ul>li{
+	float:left;
+	border:1px solid #000;
+	padding:0px 10px;
+	line-height:26px;
+	cursor:pointer;
+}
+div.page{
+	display:flex;
+	justify-content:center;
+}
 
 
 
